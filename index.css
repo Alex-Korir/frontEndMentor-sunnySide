@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;600&family=Fraunces:wght@700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    --white-color: hsl(0, 0%, 100%);
+    --graphic-design-text: hsl(167, 40%, 24%);
+    --dark-desaturated-blue: hsl(212, 27%, 19%); 
+    --grayish-blue: hsl(210, 4%, 67%);
+    --footer-color: hsl(168, 34%, 41%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --soft-red: hsl(7, 99%, 70%);
+    --footer-colorr: hsl(168, 42%, 69%);
+}
+.section-one{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: 0 auto;
+    padding: 17px;
+}
+.image1 img{
+    display: block;
+    margin: auto 0;
+}
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+.list li{
+    width: 120px;
+    padding: 15px;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;  
+}
+.list li a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.list li:last-child{
+    background-color: var(--white-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-family: 15px;
+    border-radius: 30px;
+}
+.list li, .vum:last-child{
+    text-decoration: none;
+    color: var(--dark-desaturated-blue);
+}
+.list li:last-child:hover{
+    background-color: var(--footer-color);
+    color: var(--white-color);
+}
+.navbar > .hun{
+    display: none;
+    /* border: 1px solid black; */
+}
+.hun img{
+    display: block;
+    margin: 0 auto;
+}
+.mainheading h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    color: var(--white-color);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.mainheading img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+}
+.section-two{   
+    width: 100%;
+    height: 255vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+.section-two .box1,.box2,.box3,.box4,.box5,.box6{
+    width: 100%;
+    height: 536px;
+    max-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+div > .tuzo{
+    width: 400px;
+    /* border: 1px solid green; */
+    height: 70%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.tuzo h2{
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    margin-bottom: 27px;
+    text-align: left;
+    color: var(--dark-desaturated-blue);
+}
+.tuzo p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 510;
+    line-height: 30px;
+    margin-bottom: 32px;
+    color: var(--dark-grayish-blue);
+}
+.tuzo h3{
+    font-family: 'Fraunces', serif;
+    color: var(--dark-desaturated-blue);
+    font-weight: 700;
+    font-size: 20px;
+}
+.box2{
+    background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg");
+}
+.box3{
+    background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg");
+     
+}
+.box5{
+    background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg");
+}
+.box6{
+    background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg");
+}
+div > .down-stack{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 370px;
+    /* border: 1px solid white; */
+    height: 40%;
+}
+.down-stack h3{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    margin-bottom: 27px;
+    color: var(--graphic-design-text);
+    font-weight: 700;
+}
+.down-stack p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 510;
+    line-height: 30px;
+    color: var(--footer-color);
+}
+.section-three{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white-color);
+}
+.container3{
+    width: 80%;
+    height: 65%;
+    /* border: 1px solid green; */
+    display: flex;
+}
+.div1{
+    /* border: 1px solid black; */
+    width: 33.5%;
+    margin: 20px;
+}
+.div1 p{
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 18%;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--dark-grayish-blue);
+    font-weight: 510;
+}
+.heading3{
+    /* border: 1px solid red; */
+    width: 80%;
+    text-align: center;
+    margin-bottom: 3%;
+    color: var(--grayish-blue);
+}
+.heading3 h3{
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 23px;
+    letter-spacing: 4px;
+}
+.img3 img{
+    width: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 18%;
+}
+.name{
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    /* border: 1px solid yellow; */
+}
+.name h4{
+    font-weight: bold;
+    color: var(--dark-desaturated-blue);
+}
+.name p{
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+}
+.section-four{
+    width: 100%;
+    height: 100vh;
+}
+.section-four > .images{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    /* border: 1px solid green; */
+}
+.images > .house{
+    width: 25%;
+    /* border: 1px solid red; */
+    background-size: cover;
+    background-position: center;
+}
+.images, .imgs-1{
+    background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg");
+}
+.images, .imgs-2{
+    background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-gallery-orange.jpg");
+}
+
+.images, .imgs-3{
+    background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg");
+}
+
+.images, .imgs-4{
+    background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-gallery-sugarcubes.jpg");
+}
+.section-four footer{
+    height: 40%;
+    background-color: var(--footer-colorr);
+    position: relative;
+    
+}
+footer > .container-2{
+    width: 400px;
+    height: 80%;
+    /* border: 1px solid white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container-2, img{
+    margin-bottom: 24px;
+    color: var(--graphic-design-text);
+
+}
+.container-2 ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 65px;
+}
+.container-2 ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+.container-2 ul li a{
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    color: var(--footer-color);
+    font-size: 14px;
+    font-weight: bold;
+}
+.social-media-icons img{
+    padding: 0 10px;
+}
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+    bottom: 0;
+    position: absolute;
+    left: 40%;
+}
+.attributi {
+    color: hsl(225, 67%, 98%); 
+}
+@media only screen and (max-width: 375px){
+    .section-one{
+        background-image: url("/sunnyside-agency-landing-page-main/images/mobile/image-header.jpg");
+    }
+    .navbar{
+        width: 100%;
+    }
+    .more{
+        display: none;
+    }
+    .list{
+        position: absolute;
+        width: 80%;
+        background-color: white;
+        height: 50%;
+        flex-direction: column;
+        justify-content: center;
+        top: 20%;
+        left: 10%;
+        z-index: 10;
+        text-align: center;
+    }
+    .list::before{
+        content: " ";
+        width: 30px;
+        height: 30px;
+        background-color: var(--white-color);
+        top: -4.4%;
+        right: 0;
+        position: absolute;
+        transform: skewY(-45deg);
+    }
+    .list li{
+        padding: 20px;
+    }
+    .list li a{
+        color: var(--dark-grayish-blue);
+        font-weight: 510;
+    }
+    .list li:last-child{
+        margin-top: 10px;
+        text-decoration: none;
+        color: var(--dark-desaturated-blue);
+        background-color: var(--yellow);
+    }
+    .navbar .hun{
+        display: block;
+    }
+    .mainheading h1{
+        text-align: center;
+        top: 40%;
+    }
+    .mainheading img{
+        top: 60%;
+    }
+    .section-two{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 384vh;
+    }
+    .section-two .box1,.box4,.box5,.box6{
+        height: 458px;
+    }
+    .box2, .box3{
+        height: 375px;
+    }
+    div > .tuzo{
+        width: 375px;
+        height: 50%;
+        text-align: center;
+    }
+    .tuzo h2{
+        text-align: center;
+    }
+    .section-three{
+        height: 187vh;
+        width: 375px;
+        justify-content: space-evenly;
+    }
+    .container3{
+        flex-direction: column;
+        width: 90%;
+        height: 80%;
+        /* border: 1px solid red; */
+    }
+    .heading3{
+        width: 100%;
+    }
+    .div1{
+        width: 100%;
+        margin: 0;
+        /* border: 1px solid green; */
+        margin-bottom: 30px;
+    }
+    .div1 p{
+        margin-bottom: 13%;
+        font-size: 16px;
+        color: var(--dark-grayish-blue);
+    }
+    .name{
+        margin-bottom: 10%;
+    }
+    .name p{
+        margin-bottom: 8%;
+        color: var(--grayish-blue);
+        font-size: 13px;
+    }
+    .img3 img{
+        margin-bottom: 13%;
+    }
+    .section-four{
+        height: 110vh;
+    }
+    .section-four > .images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 375px;
+    }
+    .images > .house{
+        width: 100%;
+    }
+    .section-four footer{
+        height: 50%;
+
+    }
+    .container-2 ul{
+        margin-bottom: 80px;
+    }
+    .attribution{
+        right: 33%;
+    }
+}
+@media only screen and (max-width: 416px){
+    .section-one{
+        background-image: url("/sunnyside-agency-landing-page-main/images/mobile/image-header.jpg");
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .more{
+        display: none;
+    }
+    .list{
+        position: absolute;
+        width: 87%;
+        background-color: white;
+        height: 50%;
+        flex-direction: column;
+        justify-content: center;
+        top: 17%;
+        left: 7%;
+        z-index: 10;
+        text-align: center;
+    }
+    .list::before{
+        content: " ";
+        width: 30px;
+        height: 30px;
+        background-color: var(--white-color);
+        top: -4.4%;
+        right: 0;
+        position: absolute;
+        transform: skewY(-45deg);
+    }
+    .list li{
+        padding: 20px;
+    }
+    .list li a{
+        color: var(--dark-grayish-blue);
+        font-weight: 510;
+    }
+    .list li:last-child{
+        margin-top: 10px;
+        text-decoration: none;
+        color: var(--dark-desaturated-blue);
+        background-color: var(--yellow);
+    }
+    .navbar .hun{
+        display: block;
+    }
+    .mainheading h1{
+        text-align: center;
+        top: 40%;
+    }
+    .mainheading img{
+        top: 60%;
+    }
+    .section-two{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 382vh;
+    }
+    .section-two .box1,.box4,.box5,.box6{
+        height: 434px;
+    }
+    .box2, .box3{
+        height: 416px;
+    }
+    div > .tuzo{
+        width: 416px;
+        height: 50%;
+        text-align: center;
+    }
+    .tuzo h2{
+        text-align: center;
+    }
+    .section-three{
+        height: 190vh;
+        width: 416px;
+        justify-content: space-evenly;
+    }
+    .container3{
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 90%;
+        height: 80%;
+        /* border: 1px solid red; */
+    }
+    .heading3{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .div1{
+        width: 100%;
+        margin: 0;
+        /* border: 1px solid green; */
+        margin-bottom: 30px;
+    }
+    .div1 p{
+        margin-bottom: 13%;
+        font-size: 16px;
+        color: var(--dark-grayish-blue);
+    }
+    .name{
+        margin-bottom: 10%;
+    }
+    .name p{
+        margin-bottom: 8%;
+        color: var(--grayish-blue);
+        font-size: 13px;
+    }
+
+    .img3 img{
+        margin-bottom: 13%;
+    }
+    .section-four{
+        height: 121vh;
+    }
+    .section-four > .images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 416px;
+    }
+    .images > .house{
+        width: 100%;
+    }
+    .section-four footer{
+        height: 50%;
+
+    }
+    .container-2 ul{
+        margin-bottom: 80px;
+    }
+    .attribution{
+        right: 33%;
+    }
+}
